@@ -1,0 +1,21 @@
+/* DAILY site -- one palette block, every colour and size a token. */
+:root {
+  --bg: #0D0D0F; --surface: #17171A; --text: #F2EFEA; --muted: #8A8780; --line: rgba(255,255,255,0.08);
+  --size-body: 17px; --size-small: 14px; --size-h1: 34px; --size-h2: 20px;
+  --space-1: 8px; --space-2: 16px; --space-3: 28px; --space-4: 48px;
+  --max: 640px; --radius: 14px;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #FAF9F7; --surface: #FFFFFF; --text: #17171A; --muted: #6B6862; --line: rgba(0,0,0,0.08); }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: var(--size-body)/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
+main { max-width: var(--max); margin: 0 auto; padding: var(--space-4) var(--space-2); }
+h1 { font-size: var(--size-h1); margin: 0 0 var(--space-1); letter-spacing: 0.02em; }
+h2 { font-size: var(--size-h2); margin: var(--space-3) 0 var(--space-1); }
+p, li { margin: 0 0 var(--space-2); }
+.muted { color: var(--muted); font-size: var(--size-small); }
+a { color: inherit; }
+nav { margin-top: var(--space-4); padding-top: var(--space-2); border-top: 1px solid var(--line); font-size: var(--size-small); }
+nav a { margin-right: var(--space-2); }
