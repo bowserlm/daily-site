@@ -1,0 +1,22 @@
+{
+  "_why": "Two static pages (index.html, privacy.html, style.css) served by GitHub Pages; a push to main IS the deploy, so the ship pattern is any git push in this repo. Look: open the files in a browser preview (no build). If the broad push pattern proves annoying, narrow it. LIMIT, stated: a push to main IS this site's deploy, and the 15-minute background sync pushes main whether or not a look happened -- so this gate cannot hold here; the look is a rule, not a gate, for this repo (the gate covers shipping, never the backup push: ARCHITECTURE/look-gate-2026-11-19/PROPOSAL.md).",
+  "ui": [
+    "index.html",
+    "privacy.html",
+    "style.css"
+  ],
+  "screens": [
+    {
+      "id": "home",
+      "what": "the home page at desktop width"
+    },
+    {
+      "id": "privacy",
+      "what": "the privacy policy page"
+    },
+    {
+      "id": "phone-width",
+      "what": "both pages at phone width (375 px)"
+    }
+  ]
+}
