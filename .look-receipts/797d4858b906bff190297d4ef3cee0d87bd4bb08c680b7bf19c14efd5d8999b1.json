@@ -1,0 +1,74 @@
+{
+  "app": "DAILY-site",
+  "part": "app",
+  "ui_hash": "797d4858b906bff190297d4ef3cee0d87bd4bb08c680b7bf19c14efd5d8999b1",
+  "ui": [
+    "index.html",
+    "privacy.html",
+    "style.css"
+  ],
+  "files": {
+    "index.html": "94c87ccdc40ab82c527e93a397b8f97bc62ddc9fe18cade73914be499d81d0eb",
+    "privacy.html": "cc53d5ed9580c25e0ba0b68573f81152dfba3daac59c0d29c49e3287ce0b5df0",
+    "style.css": "b45333c7482270cdf590b9beb2f4c8ef61ad5245d4fcbe9d20d44f169d1e3d8c"
+  },
+  "signed_at": "2026-11-19T16:22:32-0800",
+  "machine": "Mac.tailc73ec.ts.net",
+  "screens": [
+    {
+      "id": "home",
+      "what": "the home page at desktop width",
+      "seen": "desktop 1440 px, dark: DAILY heading, the two paragraphs (Plan my day bold), the muted maker line with the email link, the rule, the Privacy policy link; nothing clipped. Light mode at 375 px: the same, dark text on the warm off-white."
+    },
+    {
+      "id": "privacy",
+      "what": "the privacy policy page",
+      "seen": "desktop 1440 px, dark: the title, \"Last updated November 2, 2026\", every section (short version, habit data, Calendars, Google Calendar with its three permission bullets, the Limited Use paragraph with its link, disconnect, Contact), the footer DAILY link; light mode at 375 px the same."
+    },
+    {
+      "id": "phone-width",
+      "what": "both pages at phone width (375 px)",
+      "seen": "both pages at a true 375 px (DevTools mobile emulation, innerWidth 375, scrollWidth 375 -- no sideways overflow), dark and light; text wraps inside the 16 px side padding, bullets indent, links underlined."
+    }
+  ],
+  "anomalies": "none in the site. The first phone captures (plain headless --screenshot at 375) cut text off on the right: headless Chrome laid the page out at 500 px (a probe page read innerWidth=500), a capture artifact, not the site; replaced by the 375 px emulated captures. Contrast measured (WCAG): body text 16.93:1 dark / 17.00:1 light; the 14 px muted text 5.42:1 dark / 5.28:1 light (AA needs 4.5).",
+  "notes": "home: desktop 1440 px, dark: DAILY heading, the two paragraphs (Plan my day bold), the muted maker line with the email link, the rule, the Privacy policy link; nothing clipped. Light mode at 375 px: the same, dark text on the warm off-white.\nprivacy: desktop 1440 px, dark: the title, \"Last updated November 2, 2026\", every section (short version, habit data, Calendars, Google Calendar with its three permission bullets, the Limited Use paragraph with its link, disconnect, Contact), the footer DAILY link; light mode at 375 px the same.\nphone-width: both pages at a true 375 px (DevTools mobile emulation, innerWidth 375, scrollWidth 375 -- no sideways overflow), dark and light; text wraps inside the 16 px side padding, bullets indent, links underlined.\nanomalies: none in the site. The first phone captures (plain headless --screenshot at 375) cut text off on the right: headless Chrome laid the page out at 500 px (a probe page read innerWidth=500), a capture artifact, not the site; replaced by the 375 px emulated captures. Contrast measured (WCAG): body text 16.93:1 dark / 17.00:1 light; the 14 px muted text 5.42:1 dark / 5.28:1 light (AA needs 4.5).\n",
+  "shots": [
+    {
+      "name": "home-desktop.png",
+      "sha256": "71c4930060424b8ea75d63846a6fb68a173f607beaca9ff64b8a56c1ba27f254",
+      "bytes": 42950,
+      "mtime": "2026-11-19T16:20:19"
+    },
+    {
+      "name": "privacy-desktop.png",
+      "sha256": "9791684553349982eb0fcaa64b395c8361dc6489b0843b39e9c5fb9bb7e09ffa",
+      "bytes": 228845,
+      "mtime": "2026-11-19T16:20:20"
+    },
+    {
+      "name": "home-phone.png",
+      "sha256": "fb31f3125d41aa26292f0308b464e8db66e04a135572897bac9e47f9f73aa403",
+      "bytes": 91024,
+      "mtime": "2026-11-19T16:21:05"
+    },
+    {
+      "name": "privacy-phone.png",
+      "sha256": "04ae7372a0276ce5ff8a2c9515a53670247028510e9d33dbbb790b9ad986bbb1",
+      "bytes": 523165,
+      "mtime": "2026-11-19T16:21:21"
+    },
+    {
+      "name": "home-phone-light.png",
+      "sha256": "cea4106d04900aaaeae31e68f8d8c6dc38917a6355525770cdbc7d67510f575f",
+      "bytes": 91113,
+      "mtime": "2026-11-19T16:21:49"
+    },
+    {
+      "name": "privacy-phone-light.png",
+      "sha256": "dfa1af25e236ccc5ba9b85e66a8d196b4d15823c2630a0bd4d89e10482d0e1aa",
+      "bytes": 522771,
+      "mtime": "2026-11-19T16:22:04"
+    }
+  ]
+}
